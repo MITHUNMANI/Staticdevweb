@@ -60,6 +60,7 @@ body.success .container {
 .full-width-element {
   width: 100%;
   margin: 10px;
+  background-color: #fff;
   box-shadow: -1px 0px 7px 0px #767699;
 }
 /* Set the background image for the dashboard and wish-list sections */
@@ -82,15 +83,9 @@ body.success .container {
 
 /* Style links within the form */
 .form-control a {
-  color: #007bff; /* Link color */
   text-decoration: none;
 }
 
-/* Style table links */
-table a {
-  background-color: #f4f4f4 !important;
-  text-decoration: none;
-}
 
 /* Style buttons */
 .btn {
@@ -141,7 +136,7 @@ td {
 
 th,
 td {
-  padding: 10px;
+  padding: 5px;
 }
 
 .form {
@@ -262,11 +257,44 @@ td {
 .banner-section {
   background-image: url("./images/yellowBanner1.jpg");
   background-size: cover;
-  height: 40vh;
   background-attachment: fixed;
   color: #332f2f;
   font-size: 16px;
   font-weight: 600;
   box-shadow: -1px 0px 7px 0px #cacacd;
 
+}
+
+.wish-list{
+  margin: 15px auto;
+  background-color: #fff;
+  box-shadow: -1px 0px 7px 0px #cacacd;
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
