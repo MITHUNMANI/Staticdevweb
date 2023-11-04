@@ -1,8 +1,18 @@
 body {
+  font-family: monospace;
   background-color: #e0e0e0;
   box-sizing: content-box;
 }
-
+.navbar-brand{
+  font-style: italic;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+.footer-navbar-brand{
+  font-style: italic;
+  font-weight: 600;
+  font-variant: small-caps;
+}
 .container-head {
   max-width: 400px;
   margin: 50px auto;
