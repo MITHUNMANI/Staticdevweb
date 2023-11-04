@@ -56,25 +56,38 @@ body.success .container {
   margin: 10px;
   padding: 10px;
   box-shadow: -1px 0px 7px 0px #767699; 
-  background-color: #fff;
+  background-color: #ffffffc7;
 }
 .full-width-element {
   overflow-y: scroll;
     height: 35vh;
     width: 100%;
     margin: 10px;
-    background-color: #fff;
+    background-color: #ffffffc7;
+    box-shadow: -1px 0px 7px 0px #767699;
+}
+.full-width-element.wish-list.landing {
+  overflow-y: scroll;
+    height: 24vh!important;
+    width: 100%;
+    margin: 10px;
+    background-color: #ffffffc7;
     box-shadow: -1px 0px 7px 0px #767699;
 }
 /* Set the background image for the dashboard and wish-list sections */
 .banner-element {
-  background-image: url('./images/yellowBanner1.jpg');
+  background-image: url('./images/banner4.jpg');
+  /* background: #fff9c1db; */
   background-size: cover;
   height: auto;
   background-attachment: fixed;
   box-shadow: -1px 0px 7px 0px #cacacd;
 }
+.thin-border{
+  border-bottom:2px solid #ffffff;
+  border-width: medium;
 
+}
 /* Style the form fields */
 .form-control {
   margin-bottom: 10px;
@@ -98,12 +111,7 @@ body.success .container {
   border: none;
   border-radius: 5px;
 }
-.wish-list{
-  margin: 7.5px;
-  padding: 7.5px;
-  box-shadow: -1px 0px 7px 0px #cacacd;
-  border-radius: 5px;
-}
+
 /* Style card elements */
 .card {
   margin: 7.5px;
@@ -122,9 +130,9 @@ body.success .container {
   font-size: 16px;
 }
 
-.dashboard h2 {
+/* .dashboard h2 {
   margin-top: 20px;
-}
+} */
 
 table {
   width: 100%;
@@ -135,6 +143,7 @@ table,
 th,
 td {
   border: 1px solid #ccc;
+  text-align: center;
 }
 
 th,
@@ -170,7 +179,6 @@ td {
 /* Style the form container */
 .d-flex {
   align-items: center;
-  border-bottom: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -268,36 +276,30 @@ td {
 
 }
 
-.wish-list{
-  margin: 15px auto;
-  background-color: #fff;
-  box-shadow: -1px 0px 7px 0px #cacacd;
-
+.label-text{
+  margin: 10px;
+  color: rgb(50, 50, 50);
+  text-align: justify;
+  text-shadow: #cacacd;
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
+/* div#navbarNav{
+  position: fixed;
+  text-align: right;
+  justify-items: right;
+  right: 0px;
+  z-index: 99999;
+} */
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Position the tooltip above the icon */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+@media (min-width: 992px) {
+  div#navbarNav {
+    position: fixed;
+    text-align: right;
+    right: 0;
+    z-index: 99999;
+    background-color: #ffffffc7;
+    /* Add your other styles here */
+  }
 }
