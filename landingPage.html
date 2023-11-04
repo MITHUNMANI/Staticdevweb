@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" href="./images/banner1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="global.css">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="">
+        <!-- Responsive Navbar using Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Header</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> <!-- Right-align the menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Existing Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Wish List</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-block d-none"> <!-- Display only on larger screens -->
+                        <a href="signupPage.html" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+
+        <main class="container-fluid">
+            <section class="">
+                <div class="banner-section d-flex">
+                    <div class="banner-sec">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam sagittis, condimentum libero
+                        id, auctor urna. Cras at justo sem. Nullam porttitor enim nec urna vestibulum, ut suscipit
+                        tortor laoreet. Suspendisse potenti. Nulla id felis ac arcu luctus fringilla.</p>
+                    </div>
+                        <div class="banner-sec">
+                            <h1>Why Us</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam sagittis, condimentum libero
+                                id, auctor urna. Cras at justo sem. Nullam porttitor enim nec urna vestibulum, ut suscipit
+                                tortor laoreet. Suspendisse potenti. Nulla id felis ac arcu luctus fringilla.</p>
+                        </div>
+                </div>
+                <div class="container-fluid">
+                <div class="existing-features">
+                    <h1>Existing Features</h1>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+    
+                                <div class="card-body">
+                                    <img src="./images/banner1.jpg" class="card-img-top" alt="Image Alt Text">
+                                    <h5 class="card-title">Feature 1</h5>
+                                    <p class="card-text">Description of Feature 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./images/banner1.jpg" class="card-img-top" alt="Image Alt Text">
+                                    <h5 class="card-title">Feature 2</h5>
+                                    <p class="card-text">Description of Feature 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./images/banner1.jpg" class="card-img-top" alt="Image Alt Text">
+                                    <h5 class="card-title">Feature 3</h5>
+                                    <p class="card-text">Description of Feature 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./images/banner1.jpg" class="card-img-top" alt="Image Alt Text">
+                                    <h5 class="card-title">Feature 4</h5>
+                                    <p class="card-text">Description of Feature 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="wish-list full-width-element">
+                    <h1>Wish List</h1>
+                    <!-- Wish List -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Wish</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Populate this table with your wish list data -->
+                            <tr>
+                                <td>Wish 1</td>
+                                <td class="cursor-pointer">Edit&nbsp;<i class="fas fa-edit"></i></td>
+                            </tr>
+                            <!-- Add more wish list items as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; Copyright Company Name</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Include Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
