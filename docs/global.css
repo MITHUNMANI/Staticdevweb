@@ -56,12 +56,15 @@ body.success .container {
   margin: 10px;
   padding: 10px;
   box-shadow: -1px 0px 7px 0px #767699; 
+  background-color: #fff;
 }
 .full-width-element {
-  width: 100%;
-  margin: 10px;
-  background-color: #fff;
-  box-shadow: -1px 0px 7px 0px #767699;
+  overflow-y: scroll;
+    height: 35vh;
+    width: 100%;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: -1px 0px 7px 0px #767699;
 }
 /* Set the background image for the dashboard and wish-list sections */
 .banner-element {
