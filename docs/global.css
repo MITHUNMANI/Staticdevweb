@@ -54,6 +54,7 @@ body.success .container {
 .full-width-element {
   width: 100%;
   margin: 10px;
+  box-shadow: -1px 0px 7px 0px #767699;
 }
 /* Set the background image for the dashboard and wish-list sections */
 .banner-element {
