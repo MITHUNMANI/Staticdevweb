@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #ffec42db;
+  background-color: #ffec42db!important;
   /* box-sizing: content-box; */
 }
 .navbar-brand{
@@ -20,9 +20,7 @@ body {
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
 }
 
@@ -68,29 +66,26 @@ body.success .container {
   width: 100%;
   margin: 10px;
   padding: 10px;
-  box-shadow: -1px 0px 7px 0px #767699; 
-  background-color: #ffffffc7;
+  box-shadow: -1px 0px 7px 0px #fff; 
 }
 .full-width-element {
   overflow-y: scroll;
     height: 35vh;
     width: 100%;
     margin: 10px;
-    background-color: #ffffffc7;
-    box-shadow: -1px 0px 7px 0px #767699;
+    box-shadow: -1px 0px 7px 0px #fefdfd;
 }
 .full-width-element.wish-list.landing {
   overflow-y: scroll;
     height: 24vh!important;
     width: 100%;
     margin: 10px;
-    background-color: #ffffffc7;
-    box-shadow: -1px 0px 7px 0px #d3d3df;
+    box-shadow: -1px 0px 7px 0px #eeeeee;
 }
 /* Set the background image for the dashboard and wish-list sections */
 .banner-element {
   /* background-image: url('./images/banner4.jpg'); */
-  background: #ffec42db;
+  /* background: #ffec42db; */
   /* background-size: cover;
   height: auto; */
   /* background-attachment: fixed; */
@@ -98,6 +93,11 @@ body.success .container {
 }
 .thin-border{
   border-bottom:2px solid #ffffff;
+  border-width: medium;
+
+}
+.top-border{
+  border-top:2px solid #ffffff;
   border-width: medium;
 
 }
@@ -150,12 +150,13 @@ body.success .container {
 table {
   width: 100%;
   border-collapse: collapse;
+  border: none;
 }
 
 table,
 th,
 td {
-  border: 1px solid #ccc;
+  border: none;
   text-align: center;
 }
 
@@ -297,22 +298,29 @@ td {
   font-weight: 400;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
-
-/* div#navbarNav{
-  position: fixed;
-  text-align: right;
-  justify-items: right;
-  right: 0px;
-  z-index: 99999;
-} */
-
 @media (min-width: 992px) {
-  div#navbarNav {
+  nav.navbar.navbar-expand-lg.navbar-light.thin-border{
     position: fixed;
-    text-align: right;
-    right: 0;
-    z-index: 99999;
-    background-color: #ffffffc7;
-    /* Add your other styles here */
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    background-color: #ffec42;
   }
+
 }
+.existing-features{
+  margin-bottom: 10%;
+}
+/* Make main section scrollable */
+main.container-fluid{
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+.footer {
+  background-color: #ffec42;
+  /* padding: 20px 0; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* Fixed footer */
