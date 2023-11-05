@@ -1,12 +1,15 @@
 body {
-  font-family: monospace;
-  background-color: #e0e0e0;
-  box-sizing: content-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffec42db;
+  /* box-sizing: content-box; */
 }
 .navbar-brand{
   font-style: italic;
   font-weight: 600;
   font-variant: small-caps;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 .footer-navbar-brand{
   font-style: italic;
@@ -82,16 +85,16 @@ body.success .container {
     width: 100%;
     margin: 10px;
     background-color: #ffffffc7;
-    box-shadow: -1px 0px 7px 0px #767699;
+    box-shadow: -1px 0px 7px 0px #d3d3df;
 }
 /* Set the background image for the dashboard and wish-list sections */
 .banner-element {
-  background-image: url('./images/banner4.jpg');
-  /* background: #fff9c1db; */
-  background-size: cover;
-  height: auto;
-  background-attachment: fixed;
-  box-shadow: -1px 0px 7px 0px #cacacd;
+  /* background-image: url('./images/banner4.jpg'); */
+  background: #ffec42db;
+  /* background-size: cover;
+  height: auto; */
+  /* background-attachment: fixed; */
+  /* box-shadow: -1px 0px 7px 0px #cacacd; */
 }
 .thin-border{
   border-bottom:2px solid #ffffff;
